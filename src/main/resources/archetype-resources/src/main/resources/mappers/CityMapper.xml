@@ -3,8 +3,7 @@
 <mapper namespace="{package}.mapper.CityMapper">
 
     <select id = "cityList" resultType = "{package}.model.dto.CityDto" >
-      select * from city
-      limit ${(pageIndex - 1) * pageSize}, ${pageIndex * pageSize}
+      select * from city limit 1
     </select>
 
 </mapper>

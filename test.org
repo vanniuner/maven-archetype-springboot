@@ -1,0 +1,4 @@
+
+#+begin_src shell
+ mvn archetype:generate -DarchetypeGroupId=com.github.drtrang -DarchetypeArtifactId=maven-archetype-springboot -DarchetypeVersion=1.1.0 -DinteractiveMode=false -DarchetypeCatalog=local -DgroupId=van -DartifactId=test -Dversion=1.0.0 -Dpackage=com.van
+#+end_src
