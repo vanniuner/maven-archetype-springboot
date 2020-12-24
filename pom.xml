@@ -10,21 +10,25 @@
     </parent>
 
     <artifactId>maven-archetype-springboot</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <packaging>maven-archetype</packaging>
 
     <name>maven-archetype-springboot</name>
     <description>基于 Spring Boot 的 Maven 原型</description>
-    <url>https://github.com/drtrang/maven-archetype-springboot</url>
+    <url></url>
 
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
-            <url>https://github.com/drtrang/maven-archetype-springboot/blob/master/LICENSE</url>
+            <url></url>
         </license>
     </licenses>
 
     <developers>
+        <developer>
+            <name>LZJ</name>
+            <email>at18708169062@gmail.com</email>
+        </developer>
         <developer>
             <name>trang</name>
             <email>donghao.l@hotmail.com</email>
@@ -32,9 +36,9 @@
     </developers>
 
     <scm>
-        <url>https://github.com/drtrang/maven-archetype-springboot.git</url>
-        <connection>scm:git:https://github.com/drtrang/maven-archetype-springboot.git</connection>
-        <developerConnection>scm:git:https://github.com/drtrang</developerConnection>
+        <url></url>
+        <connection></connection>
+        <developerConnection></developerConnection>
         <tag>HEAD</tag>
     </scm>
 

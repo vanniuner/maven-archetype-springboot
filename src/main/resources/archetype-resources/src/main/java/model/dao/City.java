@@ -1,22 +1,24 @@
-package ${package}.model.domain;
+package ${package}.model.dao;
 
-import com.google.common.base.MoreObjects;
-import lombok.*;
-
-import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
+import com.alibaba.fastjson.JSON;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * City
  *
  * @author trang
  */
+@Data
 @NoArgsConstructor
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-@Builder
-@Getter
-@Setter
-@Table(name = "city")
+@TableName("city")
 public class City implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -37,12 +39,7 @@ public class City implements Serializable {
 
     @Override
     public String toString() {
-        return MoreObjects.toStringHelper(this).omitNullValues()
-                .add("id", id)
-                .add("name", name)
-                .add("state", state)
-                .add("country", country)
-                .toString();
+        return JSON.toJSONString(this);
     }
 
 }

@@ -61,4 +61,4 @@ spring:
 #      address: redis://127.0.0.1:6379
 
 demo:
-    key: demo-dev
+    key: demo-prod
