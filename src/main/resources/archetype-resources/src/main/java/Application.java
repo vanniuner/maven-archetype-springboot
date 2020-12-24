@@ -1,6 +1,5 @@
 package ${package};
 
-import ${package}.service.CityService;
 import ${package}.util.JsonUtils;
 import com.baidu.unbiz.easymapper.mapping.ServiceLoaderHelper;
 import lombok.extern.slf4j.Slf4j;
@@ -38,13 +37,9 @@ public class Application implements CommandLineRunner {
         SpringApplication.run(Application.class, args);
     }
 
-    @Autowired
-    private CityService cityService;
-
     @Override
     public void run(String... args) throws Exception {
         log.info("application is running...");
-        log.info(JsonUtils.toJson(cityService.selectByPk(1)));
     }
 
     @RestController

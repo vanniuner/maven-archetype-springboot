@@ -12,16 +12,6 @@ import ${package}.model.dao.City;
 import ${package}.model.dto.CityDto;
 
 /**
- * CityMapper
- *
- * @author LZJ
- */
-@Mapper
-public interface CityMapper extends BaseMapper<City> {
-}
-
-
-/**
  * @author LZJ
  * @time 2020-12-20 20:15:01
  **/

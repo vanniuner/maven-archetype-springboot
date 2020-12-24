@@ -1,11 +1,12 @@
 package ${package}.model.dao;
 
 import java.io.Serializable;
-import java.util.Date;
-import com.alibaba.fastjson.JSON;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import lombok.Data;
