@@ -1,7 +1,12 @@
 # HOW TO USE
-1. git clone https://github.com/vanniuner/maven-archetype-springboot.git
-2. mvn clean install
-3. mvn archetype:generate -DarchetypeGroupId=com.github.drtrang -DarchetypeArtifactId=maven-archetype-springboot -DarchetypeVersion=1.1.0 -DinteractiveMode=false -DarchetypeCatalog=local -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -Dpackage=${package}
+1. execute the improt.sql
+2. config application-dev.yml for jdbc connection
+3. git clone https://github.com/vanniuner/maven-archetype-springboot.git
+4. install this project maven-archetype-springboot
+    mvn clean install
+5. generate maven skeleton project
+    mvn archetype:generate -DarchetypeGroupId=com.github.drtrang -DarchetypeArtifactId=maven-archetype-springboot -DarchetypeVersion=1.1.0 -DinteractiveMode=false -DarchetypeCatalog=local -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -Dpackage=${package}
+6. mvn spring-boot:run
 
 
 # V1.1.0 Changelog
