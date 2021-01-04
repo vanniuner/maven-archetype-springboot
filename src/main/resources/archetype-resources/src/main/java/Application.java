@@ -1,7 +1,6 @@
 package ${package};
 
 import ${package}.util.JsonUtils;
-import com.baidu.unbiz.easymapper.mapping.ServiceLoaderHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,8 +31,6 @@ public class Application implements CommandLineRunner {
         System.setProperty("dubbo.application.logger", "slf4j");
         // 设置 druid 使用 slf4j 记录日志
         System.setProperty("druid.logType", "slf4j");
-        // TODO 初始化 EasyMapper，临时解决 SPI 多线程问题
-        ServiceLoaderHelper.getInstance();
         SpringApplication.run(Application.class, args);
     }
 

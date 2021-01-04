@@ -4,7 +4,13 @@
     mvn clean install
 4. Switch to your project dir where you wanted
 3. Generate maven skeleton project
+``` shell
     mvn archetype:generate -DarchetypeGroupId=com.github.drtrang -DarchetypeArtifactId=maven-archetype-springboot -DarchetypeVersion=1.1.0 -DinteractiveMode=false -DarchetypeCatalog=local -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -Dpackage=${package}
+```
+e.g.
+``` shell
+    mvn archetype:generate -DarchetypeGroupId=com.github.drtrang -DarchetypeArtifactId=maven-archetype-springboot -DarchetypeVersion=1.1.0 -DinteractiveMode=false -DarchetypeCatalog=local -DgroupId=com.tel -DartifactId=spring-test -Dversion=0.0.1-SNAPSHOT -Dpackage=com.tel
+```
 4. Execute the /src/main/resources/archetype-resources/src/main/resources/import.sql 
 5. Config application-dev.yml for your jdbc connection and so on
 6. mvn spring-boot:run
